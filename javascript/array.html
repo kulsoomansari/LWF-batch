@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- an array is a special variable which can hold more than one value at a time -->
+<!-- array property
+the length property sets or returns the number of elements in an array -->
+<!-- ARRAY METHODS
+sort - ascending/ descending/ alphabetic/ numeric
+pop  - remove from last
+push - add in last value
+shift - remove from start
+unshift - add in start
+indexOf - show index of value
+reverse - arrange in reverse order
+concat -  -->
+
+
+
+
+
+
+
+
+
+
+    <script>
+var array = ['apple', 'mango', 'banana'];
+
+// document.write(array[4])
+// document.write("<br>")
+// var length = array.length
+// document.write(length)
+// array.sort()
+// document.write(array)
+
+
+// document.write("<br>")
+// document.write("<br>")
+
+
+
+// array.push('saif')
+// document.write(array)
+
+// document.write("<br>")
+// document.write("<br>")
+
+
+// array.pop()
+// document.write(array)
+
+
+// document.write("<br>")
+// document.write("<br>")
+
+// array.shift()
+// document.write(array)
+
+// document.write("<br>")
+// document.write("<br>")
+// array.unshift("apple")
+// document.write(array)
+
+
+// document.write("<br>")
+// document.write("<br>")
+// array.reverse()
+// document.write(array)
+
+
+// document.write("<br>")
+// document.write("<br>")
+// var check = Array.isArray(array)
+// document.write(check)
+
+// document.write("<br>")
+// document.write("<br>")
+// var veg = ['potato', 'rose', 'tomato', 'onion'];
+// var add = array.concat(veg)
+// document.write(add)
+
+// document.write("<br>")
+// document.write("<br>")
+// document.write(array.indexOf("mango"))
+
+
+// var stName= ['faiz', 'rayyan', 'zayyan'];
+// var score = [320, 230, 480]
+// var percent = [64, 46, 96]
+// document.write(stName[0])
+// console.log("score of" + " " + stName[0] + " " + "is" + score[0]+ "." + "Percentage:" + percent[0])
+
+var firstName = ['kulsoom', 'fatima']
+var lastName = ['ansari', 'ansari']
+if(firstName.length=== lastName.length){
+ for(i=0; i<firstName.length; i++){
+     var twoDim = firstName[i] + " " + lastName[i];
+     document.write(twoDim)
+     document.write("<br>")
+
+ }
+    } else{
+        document.write("unequal length")
+    }
+//  var courses = []
+//  var course1 = prompt("enter your course 1")
+//  var course2 = prompt("enter your course 2")
+//  var course3 = prompt("enter your course 3")
+//  var course4 = prompt("enter your course 4")
+//  var course5 = prompt("enter your course 5")
+
+//  courses.push(course1 + " " + course2 + " " + course3 + " " + course4 + " " + course5)
+//  document.write(courses)
+
+function age(years){
+    var days = years * 365
+    return days
+}
+var tdays= age(21)
+document.write(tdays)
+document.write("<br>")
+
+
+function number(num){
+    var n = ++num
+    return n
+}
+var increment = number(9)
+document.write(increment)
+
+document.write("<br>")
+function decrement(dec){
+    var n = --dec
+    return n
+}
+var decrease= decrement(increment)
+document.write(decrease)
+
+document.write("<br>")
+function date(){
+    var dt = new Date();
+    var year = dt.getFullYear();
+    var month = dt.getMonth() + 1;
+    var dates = dt.getDate();
+    document.write(year + "-" + month + "-" + dates)
+}
+date()
+
+var phrase = "the quick brown fox jumps over the lazy dog";
+var extract = phrase.slice(20, 43)
+var merge = "the white cat"
+console.log(merge + " "+ extract)
+
+// the indexOf RETURNS -1 if the value is not found
+
+// var str = prompt ("enter your sentence");
+// var newStr = str.indexOf('  ');
+// if(newStr !== -1){
+//     console.log("found at address" + ' '+ newStr);
+// }
+// else{
+//     console.log("not found")
+// }
+
+// document.write("<br>")
+// document.write("<br>")
+// var x =[2, 4, 6, 8, 10];
+// function double(){
+//     for(i=0; i<x.length; i++){
+//         x[i] = x[i]*2
+//     }
+//     return x
+// }
+// var t = double()
+// document.write(t)
+
+// document.write("<br>")
+// document.write("<br>")
+// var y = prompt("enter your sentence")
+// var z = y.split(" ");
+// console.log(z)
+// function titleCase(){
+//     for(i=0; i<z.length; i++){
+//         z[i] = z[i][0].toUpperCase() + z[i].slice(1).toLowerCase()
+//     }
+//     return z
+// }
+// var up = titleCase();
+// document.write(up);
+
+    </script>
+</body>
+</html>

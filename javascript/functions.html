@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- a javascript function is defined with the function keyword, followed by a name, followed by parenthesis.
+
+the parenthesis may include parameter names separated by commas.
+(parameter1, parameter2)
+
+the code to be executed by the function is placed inside curly bracket. -->
+
+
+    <script>
+// function sum(a, b){
+//     var c = a + b;
+//     document.write(c)
+//     document.write("<br>")
+// }
+// sum(65, 67);
+// sum(23, 56);
+// sum(98, 45);
+
+// document.write("<br>")
+// document.write("<br>")
+
+function sum(maths, eng, sci){
+    var s = maths + eng + sci
+    return s
+}
+var total = sum(67, 80, 95)
+// document.write(total)
+
+// function percentage(tt){
+//     var per = (tt/300) *100;
+//     return per
+// }
+// var store = percentage(total);
+// document.write(store + "%");
+// console.log(store)
+// document.write("<br>")
+
+// function age(a){
+//     var years = a*365
+//     return years
+// }
+// var days = age(13)
+// document.write(days)
+
+// function increment(b){
+//     var inc = ++b
+//     return inc
+// }
+// var increase = increment(7)
+// document.write(increase)
+// document.write("<br>")
+
+// function decrement(b, c){
+//     var dec = --b + c++ - b-- + --c;
+//     return dec
+// }
+// var decrease = decrement(6, 5)
+// document.write(decrease)
+
+document.write("<br>")
+function decrement(b, c){
+    // var dec = c++ -  --b + ++b - c-- + ++c;
+    // 5 - 5 + 6 - 6 + 6
+    var dec = --c - b-- + ++b + ++c;
+    // 4 - 6 + 6 + 5
+    return dec
+}
+var decrease = decrement(6, 5)
+document.write(decrease)
+    </script>
+</body>
+</html>

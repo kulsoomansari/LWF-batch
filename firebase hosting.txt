@@ -1,0 +1,17 @@
+install node js
+install firebase by using this command
+npm i -g firebase-tools
+firebase -v
+node -v
+create project on firebase.google.com
+open cmd
+firebase login
+go to your corrent directory where your file is located
+firebase init hosting
+yes
+use an existing project
+select the project which you have already created and enter
+use public directory 
+configure as a single page app (yes)
+setup automatic build and deploys with github (no)
+firebase deploy --only hosting

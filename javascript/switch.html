@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- switch(expression){
+        case "constant": code;
+        break;
+        case "constant": code;
+        break;
+        default ;
+    } -->
+
+<h3>Enter your choice</h3>
+<ul>
+    <li>Add</li>
+    <li>Sub</li>
+    <li>mult</li>
+</ul>
+<br>
+<form action="">
+<input type="text" id="choices">
+<br>
+<button onclick="myfunc()">Click Me</button>
+</form>
+
+    <script>
+function myfunc(){
+    var a = 10;
+    var b = 20;
+    var choice = document.getElementById("choices").value
+    switch(choice){
+        case "Add": var sum = a + b;
+        document.write("the addition of two Number is" + sum);
+        break;
+
+        case "Sub": var sub = a - b;
+        document.write("the subtraction of two Number is" + sub);
+        break;
+
+        case "mult": var multiply = a * b;
+        document.write("the multiplication of two Number is" + multiply);
+        break;
+
+        default: alert("not a valid input")
+
+    }
+}
+
+
+    </script>
+</body>
+</html>

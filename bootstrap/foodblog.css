@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Karma', serif;
+}
+.navbar-nav ul{
+    padding: 16px 0px !important;
+}
+.navbar-nav ul li{
+    display: inline-block;
+    margin: 0px 15px !important;
+}
+.navbar-nav ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+
+}
+
+
+.about p{
+    margin: 15px 30px !important;
+}

@@ -1,0 +1,48 @@
+/* #intro{
+font-size: 20px;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-weight: bold;
+font-style: oblique;
+text-decoration: overline;
+word-spacing: 5px;
+text-align: center;
+}
+p::first-letter{
+font-size: 50px;
+}
+h1{
+    text-shadow: 2px 5px 0px rgb(219, 168, 168);
+}
+a{
+    text-decoration: none;
+}
+a:link{
+    color: deeppink;
+}
+a:visited{
+    color: firebrick;
+} */
+h1{
+    text-align: center;
+}
+form{
+   width: 30%; 
+   margin: 0 auto;
+}
+fieldset#one{
+    margin-bottom: 25px;
+}
+fieldset{
+    background-color: honeydew;
+}
+legend{
+    font-weight: bolder;
+    font-size: 35px;
+}
+button{
+background-color: hotpink;
+width: 80px;
+height: 40px;
+border-radius: 10px;
+font-size: 20px;
+}

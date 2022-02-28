@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    color: red;
+    font-style: italic;
+    font-size: 35px;
+    text-decoration: underline;
+}
+p{
+    width: 400px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 25px 15px;
+    padding: 10px;
+}
+div{
+    position: relative;
+}
+#two{
+    position: absolute;
+    left: 500px;
+    top: 50px;
+}
