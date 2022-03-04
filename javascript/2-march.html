@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        // var cleanestCity = ["karachi", "peshawar", "kashmir", "KPK", "lahore"]
+        // var input = prompt("Enter yout city name")
+        // // input = input.toLowerCase()
+        // for(i=0; i<=cleanestCity.length; i++){
+        //     if(input === cleanestCity[i]){
+        //         alert("It's one of the cleanest city")
+        //         break;
+        //     }
+        // }
+        // if(input !== cleanestCity[i]){
+        //         alert("It's not on the list");
+        //     }
+
+// var phrase = "the quick brown fox jumps over the lazy dog"
+// var len = phrase.length
+// console.log(len)
+// var extract = phrase.slice(20, 43)
+// console.log("the white cat" + " " + extract)
+
+// var i = phrase.indexOf("fox")
+// console.log(i)
+// var c = phrase.charAt(16)
+// console.log(c)
+
+var text = "World War II , often abbreviated as WWII or WW2, was a global war that lasted from 1939 to 1945, the Second World War."
+for (var i = 0; i < text.length; i++) {
+if (text.slice(i, i + 12) === "World War II") {
+text = text.slice(0, i) + "the Second World War" + text.slice(i + 12);
+console.log(text)
+}
+}
+
+
+
+var x = eval(5*5)
+console.log(x)    
+
+
+    </script>
+</body>
+</html>
