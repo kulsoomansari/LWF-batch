@@ -34,18 +34,22 @@
 // var c = phrase.charAt(16)
 // console.log(c)
 
-var text = "World War II , often abbreviated as WWII or WW2, was a global war that lasted from 1939 to 1945, the Second World War."
-for (var i = 0; i < text.length; i++) {
-if (text.slice(i, i + 12) === "World War II") {
-text = text.slice(0, i) + "the Second World War" + text.slice(i + 12);
-console.log(text)
+
+// var phrase = "the quick brown fox jumps over the lazy dog"
+// for(var i =0; i< phrase.length; i++){
+//     if(phrase.slice(i, i+ 19) === "the quick brown fox"){
+//         phrase = phrase.slice(0, i) + "the white cat" + phrase.slice(i + 19)
+//         console.log(phrase)
+//     }
+// }
+
+var phrase = "the quick brown fox jumps over the lazy dog"
+var firstChar = phrase.indexOf("the quick brown fox");
+if(firstChar !== -1){
+    phrase = phrase.slice(0, firstChar) + "the white cat" + phrase.slice(firstChar + 19)
+    console.log(phrase)
 }
-}
 
-
-
-var x = eval(5*5)
-console.log(x)    
 
 
     </script>
