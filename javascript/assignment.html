@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!-- <form>
+    <label for="fname">First Name:</label>
+    <input type="text" name="fname" id="fname">
+    <br>
+    <label for="lname">Last Name:</label>
+    <input type="text" name="lname" id="lname">
+    <br>
+<label for="email">Email:</label>
+<input type="email" id="email">
+<br>
+<input type="submit" value="submit" onsubmit="displayData()">
+</form>
+<div>
+    <p id="p1"></p>
+    <p id="p2"></p>
+</div> -->
+
+
+<div id='country'>
+    <p>Pakistan</p>
+    <p>Australia</p>
+   </div>
+   <div id='city'>
+    <p>Karachi</p>
+    <p>Kuwait</p>
+   </div>
+
+<div>
+    <input type="text" id="todo" placeholder="Enter your todos here.....">
+    <button onclick="todos()">Add</button> 
+    <button onclick="delete_all()">Delete All</button>
+</div>
+ 
+<div>
+    <ul id="list">
+
+    </ul>
+</div>
+
+<!-- <table>
+    <tr>
+        <td>Name</td>
+        <td>Class</td>
+        <td>Monthly fee</td>
+    </tr>
+    <tr id="one">
+        <td>fahad</td>
+        <td>10</td>
+        <td>3000</td>
+        <td><button onclick="del_1()">Delete</button></td>
+    </tr>
+    <tr id="two">
+        <td>ayesha</td>
+        <td>XI</td>
+        <td>10,000</td>
+        <td><button onclick="del_2()">Delete</button></td>
+    </tr>
+    <tr id="three">
+        <td>rubab</td>
+        <td>XII</td>
+        <td>12,000</td>
+        <td><button id="btn" onclick="del_3()">Delete</button></td>
+    </tr>
+</table> -->
+
+<script>
+// function displayData(fname, lname){
+// var val_1 = document.getElementById("fname").value
+// document.getElementById("p1").innerHTML = val_1
+
+// var val_2 = document.getElementById("lname").value
+// document.write(val_2)
+// document.getElementById("p2").innerHTML = val_2
+
+
+// var val_3 = document.getElementById("").value
+// document.write(val_3)
+
+// var div = document.getElementById("city")
+// var city = div.getElementsByTagName("p")
+// city[1].innerHTML = "Sydney"
+
+// var div = document.createElement('p')
+// var text = document.createTextNode('USA')
+// var join = div.appendChild(text)
+// var target = document.getElementById('country')
+// var add_body = target.appendChild(div)
+
+
+// move new element before existing child
+// var target = document.getElementById("country")
+// target.insertBefore(div, target.children[1])
+
+
+var list = document.getElementById('list')
+function todos(){
+    var get = document.getElementById("todo")
+    var li = document.createElement("li")
+    var text_node = document.createTextNode(get.value)
+   li.appendChild(text_node)
+
+//    create delete button
+var btn = document.createElement("button")
+var btn_text =document.createTextNode("Delete")
+btn.appendChild(btn_text)
+btn.setAttribute("class", "btn")
+btn.setAttribute("onclick", "delete_btn(this)")
+li.appendChild(btn)
+console.log(btn)
+
+// create edit btn
+
+var edit_btn = document.createElement("button")
+var edit_txt = document.createTextNode("Edit Button")
+edit_btn.appendChild(edit_txt)
+li.appendChild(edit_btn)
+edit_btn.setAttribute("onclick", "editBtn(this)")
+
+list.appendChild(li)
+get.value = " "
+
+}
+function delete_btn(e){
+e.parentNode.remove()
+}
+function delete_all(){
+    list.innerHTML = " "
+}
+function editBtn(e){
+    var val = e.parentNode.firstChild.nodeValue
+var edit_val = prompt("enter your edit value", val)
+e.parentNode.firstChild.nodeValue = edit_val
+}
+
+//     function del_1(){
+// var click = document.getElementById("one")
+// click.remove();
+// }
+// function del_2(){
+// var click = document.getElementById("two")
+// click.remove();
+// }
+// function del_3(){
+// var click = document.getElementById("three")
+// click.remove();
+// }
+
+for (var i = 0; i < library.length; i++) 
+   {
+    var book = "'" + library[i].title + "'" + ' by ' + library[i].author + ".";
+    if (library[i].readingStatus) {
+      console.log("Already read " + book);
+    } else
+    {
+     console.log("You still need to read " + book);
+    }
+   }
+</script>
+
+
+</body>
+</html>

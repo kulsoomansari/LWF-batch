@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<script>
+    var plan = {
+        firstName: "kulsoom",
+        lastName: "ansari",
+        qualification: "B.S",
+        profession: "teacher"
+    }
+
+    console.log(plan)
+    console.log(plan.firstName)
+
+plan.qualification = "M.Phil"
+console.log(plan)
+
+plan.income = 200000
+console.log(plan)
+
+delete plan.income
+console.log(plan)
+
+
+var plan1 = {
+    name: "basic",
+    price: 3.99,
+    discountMonth: [6, 7]
+}
+
+function calcAnnual(){
+    var bestPrice = plan1.price;
+    var currDate = new Date()
+    var thisMo = currDate.getMonth()
+    for(var i =0; i< plan1.discountMonth[i].length; i++){
+        if(thisMo === plan1.discountMonth[i]){
+         bestPrice = bestPrice*0.8
+         break   
+        }
+    }
+    return bestPrice * 12
+}
+var annualPrice = calcAnnual()
+document.write(annualPrice)
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h2>Nuber methods</h2>
+    <ul>
+        <li>Number</li>
+        <li>parseInt</li>
+        <li>parseFloat</li>
+        <li>isFinite</li>
+        <li>isInteger</li>
+        <li>toFixed</li>
+        <li>toPrecision</li>
+    </ul>
+
+
+
+
+<script>
+    //  var a = false
+    // var num = Number(a)
+    // var type = typeof(num)
+    // document.write(type)
+    // document.write("<br>");
+    // document.write(num)
+  
+
+    // var a = "9.6788909" 
+    // var num = parseInt(a)
+    // document.write(num)
+
+
+    // var a = "9.6788909" 
+    // var num = parseFloat(a)
+    // var type = typeof(num)
+    // document.write(type)
+    // document.write(num)
+
+    // var a = Infinity;
+    // var num = isFinite(a)
+    // document.write(num)
+
+    // var a = "8";
+    // var num = Number.isInteger(a)
+    // document.write(num)
+    
+    // var a = 8.735489;
+    // var num = a.toFixed(2)
+    // document.write(num)
+
+    var a = 8.735489;
+    var num = a.toPrecision(4)
+    document.write(num)
+
+
+    // var str = prompt("enter your sentence");
+    // var newStr = str.indexOf("  ");
+    // if(newStr !== -1){
+    //     console.log("found at address" + " "+ newStr)
+    // }
+
+    var y = prompt("enter your sentence");
+    var z = y.split(" ");
+    console.log(z)
+    function titleCase(){
+        for(i=0; i<z.length; i++){
+         z[i] = z[i][0].toUpperCase()+ z[i].slice(1).toLowerCase()
+        }
+        return z
+    }
+    var up = titleCase();
+    console.log(up)
+
+</script>
+
+</body>
+</html>

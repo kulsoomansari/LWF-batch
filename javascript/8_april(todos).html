@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="todos" placeholder="Enter your todos here.....">
+        <button onclick="addTodos()">Add todos</button>
+        <button onclick="delete_all()">Delete All</button>
+    </div>
+
+<div>
+    <ul id="list">
+
+    </ul>
+</div>
+
+
+    <script>
+        var list = document.getElementById("list")
+        function addTodos(){
+          var get = document.getElementById("todos")
+          var li = document.createElement("li")
+          var text_node = document.createTextNode(get.value)
+          li.appendChild(text_node)
+          list.appendChild(li)
+
+        //   create delete button
+var btn = document.createElement("button")
+var btn_txt = document.createTextNode("Delete")
+btn.appendChild(btn_txt)
+li.appendChild(btn)
+btn.setAttribute("class", "btn")
+btn.setAttribute("onclick", "delete_todos(this)")
+
+        //   create edit button
+var edit_btn = document.createElement("button")
+var edit_txt = document.createTextNode("Edit button")
+edit_btn.appendChild(edit_txt)
+li.appendChild(edit_btn)
+edit_btn.setAttribute("onclick", "edit_todos(this)")
+           get.value = " "
+}
+        
+function delete_todos(e){
+    e.parentNode.remove()
+}
+
+function edit_todos(e){
+    var val = e.parentNode.firstChild.nodeValue
+    var edit = prompt("Enter your edit value", val)
+    e.parentNode.firstChild.nodeValue = edit
+}
+
+function delete_all(){
+list.innerHTML = " "
+}
+        </script>
+
+</body>
+</html>

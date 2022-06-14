@@ -21,7 +21,31 @@ indexOf - show index of value
 reverse - arrange in reverse order
 concat -  -->
 
-
+<table>
+    <tr>
+        <td>Name</td>
+        <td>Class</td>
+        <td>Monthly fee</td>
+    </tr>
+    <tr id="one">
+        <td>fahad</td>
+        <td>10</td>
+        <td>3000</td>
+        <td><button onclick="del_1()">Delete</button></td>
+    </tr>
+    <tr id="two">
+        <td>ayesha</td>
+        <td>XI</td>
+        <td>10,000</td>
+        <td><button onclick="del_2()">Delete</button></td>
+    </tr>
+    <tr id="three">
+        <td>rubab</td>
+        <td>XII</td>
+        <td>12,000</td>
+        <td><button id="btn" onclick="del_3()">Delete</button></td>
+    </tr>
+</table>
 
 
 
@@ -31,7 +55,30 @@ concat -  -->
 
 
     <script>
-var array = ['apple', 'mango', 'banana'];
+
+function del_1(){
+var click = document.getElementById("one")
+click.remove();
+}
+function del_2(){
+var click = document.getElementById("two")
+click.remove();
+}
+function del_3(){
+var click = document.getElementById("three")
+click.remove();
+}
+
+
+
+
+
+
+
+
+
+
+// var array = ['apple', 'mango', 'banana'];
 
 // document.write(array[4])
 // document.write("<br>")
@@ -97,18 +144,18 @@ var array = ['apple', 'mango', 'banana'];
 // document.write(stName[0])
 // console.log("score of" + " " + stName[0] + " " + "is" + score[0]+ "." + "Percentage:" + percent[0])
 
-var firstName = ['kulsoom', 'fatima']
-var lastName = ['ansari', 'ansari']
-if(firstName.length=== lastName.length){
- for(i=0; i<firstName.length; i++){
-     var twoDim = firstName[i] + " " + lastName[i];
-     document.write(twoDim)
-     document.write("<br>")
+// var firstName = ['kulsoom', 'fatima']
+// var lastName = ['ansari', 'ansari']
+// if(firstName.length=== lastName.length){
+//  for(i=0; i<firstName.length; i++){
+//      var twoDim = firstName[i] + " " + lastName[i];
+//      document.write(twoDim)
+//      document.write("<br>")
 
- }
-    } else{
-        document.write("unequal length")
-    }
+//  }
+//     } else{
+//         document.write("unequal length")
+//     }
 //  var courses = []
 //  var course1 = prompt("enter your course 1")
 //  var course2 = prompt("enter your course 2")
@@ -119,44 +166,44 @@ if(firstName.length=== lastName.length){
 //  courses.push(course1 + " " + course2 + " " + course3 + " " + course4 + " " + course5)
 //  document.write(courses)
 
-function age(years){
-    var days = years * 365
-    return days
-}
-var tdays= age(21)
-document.write(tdays)
-document.write("<br>")
+// function age(years){
+//     var days = years * 365
+//     return days
+// }
+// var tdays= age(21)
+// document.write(tdays)
+// document.write("<br>")
 
 
-function number(num){
-    var n = ++num
-    return n
-}
-var increment = number(9)
-document.write(increment)
+// function number(num){
+//     var n = ++num
+//     return n
+// }
+// var increment = number(9)
+// document.write(increment)
 
-document.write("<br>")
-function decrement(dec){
-    var n = --dec
-    return n
-}
-var decrease= decrement(increment)
-document.write(decrease)
+// document.write("<br>")
+// function decrement(dec){
+//     var n = --dec
+//     return n
+// }
+// var decrease= decrement(increment)
+// document.write(decrease)
 
-document.write("<br>")
-function date(){
-    var dt = new Date();
-    var year = dt.getFullYear();
-    var month = dt.getMonth() + 1;
-    var dates = dt.getDate();
-    document.write(year + "-" + month + "-" + dates)
-}
-date()
+// document.write("<br>")
+// function date(){
+//     var dt = new Date();
+//     var year = dt.getFullYear();
+//     var month = dt.getMonth() + 1;
+//     var dates = dt.getDate();
+//     document.write(year + "-" + month + "-" + dates)
+// }
+// date()
 
-var phrase = "the quick brown fox jumps over the lazy dog";
-var extract = phrase.slice(20, 43)
-var merge = "the white cat"
-console.log(merge + " "+ extract)
+// var phrase = "the quick brown fox jumps over the lazy dog";
+// var extract = phrase.slice(20, 43)
+// var merge = "the white cat"
+// console.log(merge + " "+ extract)
 
 // the indexOf RETURNS -1 if the value is not found
 
@@ -194,6 +241,50 @@ console.log(merge + " "+ extract)
 // }
 // var up = titleCase();
 // document.write(up);
+
+// var x = +prompt("Enter your number")
+// if(x === Number.isInteger(x)){
+//     alert("entered num is an integer")
+// } else if(x === ""){
+//     alert("you have not entered any num")  
+// }else{
+//     alert("entered num is not an integer")
+// }
+
+// document.write("<br>")
+// function randomNum(min, max){
+//     var a = Math.floor(Math.random()*(max - min)+ 2)
+//     return a
+// }
+// var output = randomNum(-2,4)
+// document.write(output)
+
+// document.write("<br>")
+// var d = new Date();
+// var day = d.getDay();
+// console.log(day)
+// if(day === 0 || day === 1){
+//     alert("it's funday")
+// } else{
+//     alert("it's not funday")
+// }
+
+// document.write("<br>")
+// var date = d.getDate();
+// if(date < 16){
+//     alert("first fifteen days of the month")
+// }else{
+//     alert("Last days of the month")
+// }
+
+// var time = d.getHours();
+// if(time< 12){
+//     alert("It's A.M")
+// }else{
+//     alert("It's P.M")
+// }
+
+
 
     </script>
 </body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis numquam asperiores eius maiores itaque aliquid quis id aut vitae.Ipsum quibusdam earum atque fuga laudantium perspiciatis eius error perferendis enim.</p>
+    <p class="welcome">Welcome to the class 1</p>
+    <p class="welcome">Welcome to the class 2</p>
+    <p class="welcome">Welcome to the class 3</p>
+    <p>web and mobile app development class</p>
+
+    <h1>elements and attributes is called 'object'</h1>
+    <input type="text">
+
+<ul>
+    <li>HOME</li>
+    <li>ABOUT US</li>
+    <li>CONTACT</li>
+
+</ul>
+
+
+    <script>
+    var a = document.getElementById("para")
+    console.log(a)
+    a.innerHTML = "changed text node"
+    console.log(a.innerHTML)
+        var b = document.getElementsByClassName("welcome")[0].innerHTML
+        console.log(b)
+var c = document.getElementsByTagName("p")[2]
+console.log(c)
+
+// Access children of a body
+
+var child = document.body.children
+console.log(child)
+
+// add a new child in a body
+
+var para = document.createElement("p");
+var textNode = document.createTextNode("this is a newly created para");
+para.appendChild(textNode)
+console.log(para)
+document.body.appendChild(para)
+
+
+    </script>
+</body>
+</html>

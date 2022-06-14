@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <!-- <h1 id="myData">STOPWATCH</h1>  
+<button onclick="startTimer()">start</button>
+<button onclick="stopTimer()">stop</button> -->
+
+<p id="showClock">........</p>
+<button onclick="">show clock</button>
+<button onclick="clearInterval(clock)">stop clock</button>
+
+
+
+
+
+<script>
+//  var myData = document.getElementById("myData") 
+//  function welcome(){
+// myData.innerHTML = `welcome to the class`
+//  } 
+//  function  startTimer(){
+//      myData.innerHTML = `Loading data.........`
+//      setTimeout(welcome, 1000)
+//  }
+
+
+// var myData = document.getElementById("myData") 
+// var num = 0;
+// var timerRef;
+//  function stopWatch(){
+// myData.innerHTML = num;
+// num++
+//  } 
+//  function  startTimer(){
+//      myData.innerHTML = `Loading data.........`
+//    timerRef =  setInterval(stopWatch, 1000)
+//  }
+// function stopTimer(){
+//    clearInterval(timerRef) 
+// }
+
+
+var clock = setInterval(timing, 1000)
+function timing(){
+    var d = new Date();
+var time = d.toLocaleTimeString();
+showClock.innerHTML = `Loading data.........`
+document.getElementById("showClock").innerHTML = time
+}
+
+</script>
+
+</body>
+</html>

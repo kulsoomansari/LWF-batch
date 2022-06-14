@@ -1,0 +1,143 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+:root{
+--bgcolor: #f1f1fd;
+--primary-color: #6f5de7;
+--text-color: #828286;
+--main-text-color: #333333;
+}
+html{
+  font-size: 62.5%;
+}
+a{
+  text-decoration: none;
+  color: #fff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+color: #333333;
+}
+/* ----------------------------navbar css----------------- */
+ .navbar-bg{
+  background-color: var(--bgcolor);
+  padding: 2rem 0;
+}
+.navbar-brand{
+  font-size: 2.5rem;
+}
+.navbar li{
+  padding: 0 2rem;
+}
+.navbar li a{
+  font-size: 1.7rem;
+  font-weight: lighter;
+  position: relative;
+}
+.navbar li a:hover{
+  color: var(--primary-color);
+  text-shadow: 0 0.2rem 0.3rem rgba(183, 171, 255, 0.5);
+}
+.btn-style{
+  width: 12rem;
+  height: 4rem;
+  border-radius: 2rem;
+  color: #fff;
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+  font-size: 1.6rem;
+}
+.btn-style:first-child{
+margin-right: 2rem;
+}
+.btn-style:hover{
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+}
+/* --------------------------------------navbar section ends--------------------- */
+
+/* --------------------------------------header section starts--------------------- */
+header{
+  background-color: var(--bgcolor);
+}
+.main-hero-container{
+  height: 80vh;
+  display: flex;
+}
+.header-left-side h1{
+text-transform: capitalize;
+font-weight: bolder;
+}
+.main-hero-para{
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: lighter;
+  margin: 3rem 0 5rem 0;
+  width: 75%;
+}
+.main-hero-container h3{
+  font-weight: lighter !important;
+}
+.header-right-side{
+  position: relative;
+}
+.header-right-side img{
+  width: 60%;
+  height: 70%;
+  margin-top: 10rem;
+  border-radius: 2rem;
+  position: absolute;
+}
+.header-right-side .hero-img2{
+  width: 50%;
+  height: 30%;
+  position: absolute;
+  left: 55%;
+  top: -2%;
+}
+.input-group{
+  position: relative;
+}
+.input-text{
+  border: none;
+  height: 5rem;
+  padding-left: 2rem !important;
+  font-size: 1.4rem;
+}
+.input-group-button{
+  position: absolute;
+  left: 33%; 
+  top: 5px;
+  width: 15%;
+  height: 4rem;
+  border-radius: 4rem !important;
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.input-group-button:hover{
+  border: 0.1rem solid var(--primary-color);
+  background-color: transparent;
+  color: var(--primary-color);
+
+}
+/* --------------------------------------header section ends---------------------  */
+
+/* --------------------------------------heading section starts---------------------  */
+.work-container{
+  width: 80vh;
+  padding: 5rem;
+  margin-top: -10px;
+}

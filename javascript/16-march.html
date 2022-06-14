@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- get Monthly
+    get date
+    get time
+     getSeconds
+     getDay
+     getMonth
+    getHours
+
+0-sunday -->
+
+<!-- midnight 1 january 1970 -->
+
+
+    <script>
+        var rightNow = new Date()
+        // var day = rn.getDay()
+        // var date = rn.getDate()
+        // console.log(day)
+    
+
+        var mon = rightNow.getMonth() + 1
+        console.log(mon)
+
+//         var date = rightNow.getDate()
+// console.log(date)
+
+var hours = rightNow.getHours()
+console.log(hours)
+
+// var sec = rightNow.getSeconds()
+// console.log(sec)
+
+var time = rightNow.getTime()
+console.log(time)
+
+var daysName = ['sun', 'mon', 'tues', 'wed', 'thurs', 'fri', 'sat']
+var rightNow = new Date();
+var day = rightNow.getDay()
+console.log(day)
+var currentDay = daysName[day]
+alert(currentDay)
+
+var create = new Date("june 10 , 2030")
+console.log(create)
+
+var newMonth = rightNow.setMonth(11)
+console.log(newMonth)
+
+var today = new Date();
+var day = today.getDay();
+if(day === 0 || day ===1){
+    alert("It's Funday")
+}
+else{
+    alert("It's weekday")
+}
+var ms = today.getTime();
+// console.log(ms)
+// var sec = (ms / 1000)/60;
+// console.log(sec)
+
+// var hour = today.getHours()
+// if(hour < 12){
+//     alert("It's A.M")
+// }else{
+//     alert("It's P.M")
+// }
+var ramadan = new Date("2 april, 2022");
+console.log(ramadan)
+var days = ramadan.getDay();
+console.log(days)
+var pastRamadan = new Date("18 june 2015")
+console.log(pastRamadan)
+    </script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div id='country'>
+        <p>Pakistan</p>
+        <p>Australia</p>
+       </div>
+       <div id='city'>
+        <p>Karachi</p>
+        <p>Kuwait</p>
+       </div>
+    
+
+    <script>
+// var div = document.getElementById('city')
+// var city = div.getElementsByTagName('p')
+// city[1].innerHTML = "Sydney"
+
+var div = document.createElement('p')
+var text = document.createTextNode('USA')
+div.appendChild(text)
+var target = document.getElementById('country')
+target.appendChild(div)
+target.insertBefore(div, target.children[0])
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var library = [ 
+    {
+        title: 'The Road Ahead',
+        author: 'Bill Gates',
+        readingStatus: true
+    },
+    {
+        title: 'Steve Jobs',
+        author: 'Walter Isaacson',
+        readingStatus: true
+    },
+    {
+        title: 'Mockingjay: The Final Book of The Hunger Games',
+        author: 'Suzanne Collins',
+        readingStatus: false
+    }];
+    for(var i=0; i<library[i].title.length; i++){
+        var book = library[i].title + " "+"by" + " "+ library[i].author
+        if(library[i].readingStatus == true){
+            console.log("already read" + book)
+            break;
+        }
+        
+        else{
+            console.log("you still need to read" + book)
+        }
+    }
+    </script>
+</body>
+</html>
