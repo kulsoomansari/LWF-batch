@@ -1,4 +1,4 @@
-*{
+/* *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -11,7 +11,7 @@
 .card{
   margin: 6%;
   /* transition: all 0.4s cubic-bezier(0.175, 0.82, 0, 1); */
-  background-color: #fff;
+  /* background-color: #fff;
   width: 21.25%;
   border-radius: 12px;
   float: left;
@@ -42,7 +42,7 @@ button{
   border-radius: 5px;
 }
 
-/* *{
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -68,7 +68,7 @@ h4,
 h5,
 h6{
 color: #333333;
-}
+} */
 /* ----------------------------navbar css----------------- */
 /* .navbar-bg{
   background-color: var(--bgcolor);
@@ -171,4 +171,4 @@ font-weight: bolder;
   align-items: center;
 
 }
---------------------------------------header section ends--------------------- */ */
+/* --------------------------------------header section ends---------------------  */
